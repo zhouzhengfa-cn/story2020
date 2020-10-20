@@ -55,4 +55,14 @@ public class SingleController {
         }
         return user2020Dao.insertOne(new User2020(name, email, password));
     }
+
+    @RequestMapping("/login2020")
+    public String login2020(){
+        return "account-operation/login";
+    }
+
+    @RequestMapping("/snake-greedy-2020")
+    public String snakeGreedyHomePage(){
+        return "game/snake-greedy/homePage-snakeGreedy";
+    }
 }

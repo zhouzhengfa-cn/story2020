@@ -10,7 +10,7 @@
     </parent>
     <groupId>cn.zhouzhengfa</groupId>
     <artifactId>story2020</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>story2020</name>
     <description>Demo project for Spring Boot.</description>
 
