@@ -20,7 +20,7 @@ public class SingleController {
 
     @RequestMapping("/")
     public String homePage2020oct14() {
-        return "homePage2020oct14";
+        return "homePage/homePage2020oct28";
     }
 
     @RequestMapping("/about-project")
