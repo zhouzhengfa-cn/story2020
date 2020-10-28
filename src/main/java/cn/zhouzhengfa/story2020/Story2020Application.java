@@ -16,6 +16,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Story2020Application {
 
     public static void main(String[] args) {
+//        life a,
         SpringApplication.run(Story2020Application.class, args);
 /*
 李连杰
