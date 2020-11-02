@@ -2,7 +2,6 @@ package cn.zhouzhengfa.story2020.view;
 
 import cn.zhouzhengfa.story2020.dao.User2020Dao;
 import cn.zhouzhengfa.story2020.entity.User2020;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,7 +19,7 @@ public class SingleController {
 
     @RequestMapping("/")
     public String homePage2020oct14() {
-        return "homePage/homePage2020oct28";
+        return "homePage/homePageMain2020-1102";
     }
 
     @RequestMapping("/about-project")

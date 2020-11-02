@@ -28,4 +28,14 @@ public interface User2020Dao {
      */
     @Insert("insert into user2020(name,email,password) values(#{name},#{email},#{password})")
     int insertOne(User2020 user2020);
+
+
+    /**
+     * 获取ID通过name
+     * @param name
+     * @return
+     * 返回值为对象是避免为null时，无法转换。
+     */
+    @Select("select id from user2020 where name=#{name}")
+    Integer getIdByName(String name);
 }

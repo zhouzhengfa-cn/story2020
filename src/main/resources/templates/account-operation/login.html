@@ -20,6 +20,7 @@
     <style>
         /*罗平县罗雄镇白龙潭村224号*/
         /*周政法*/
+        
         html,
         body {
             /*这就有点言过其实了，当初内战属于党派之争，哪里来什么正反？*/
@@ -56,15 +57,22 @@
             <div class="col-5 col-md-5 col-md-offset-3">
                 <div class="input-group ">
                     <span class="input-group-addon">name:</span>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="your name,">
+                    <input id="nameInput" type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="your name,">
                     <!-- <span class="input-group-addon">.00</span> -->
                 </div>
                 <!--贪吃蛇-->
+                <p>
+                    <span id="nameInputTip">&nbsp;</span>
+
+                </p>
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon">password:</span>
                     <input type="password" placeholder="your password." name="" id="input" class="form-control" value="" required="required" pattern="" title="">
                 </div>
+                <p>
+                    <span>&nbsp;</span>
+                </p>
                 <br>
                 <div style="text-align: center;">
                     <div class="btn-group" role="group" aria-label="Button group">
@@ -76,12 +84,24 @@
                         </button>
                     </div>
                 </div>
-               
+
             </div>
         </div>
-
+        <!-- 此处为bootstrap4的，这里难怪不显示 -->
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">loading...</span>
+        </div>
     </div>
-
+    <script>
+        $(function() {
+            console.log('登陆也，');
+            // 光标离开input-text:account,触发事件，ajax查看账号是否存在；
+            $('#nameInput').focusout(function() {
+                console.log('leave,input name,');
+                $('#nameInputTip').get(0).innerHTML = '开始检查当前账号是否存在.....'
+            })
+        })
+    </script>
 </body>
 
 </html>
