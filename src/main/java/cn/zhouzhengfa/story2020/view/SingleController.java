@@ -19,7 +19,8 @@ public class SingleController {
 
     @RequestMapping("/")
     public String homePage2020oct14() {
-        return "homePage/homePageMain2020-1102";
+        //太黑了，这屏幕；
+        return "homePage/HomePage2020m1103";
     }
 
     @RequestMapping("/about-project")

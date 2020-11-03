@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MyStory</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <!-- <title>Hello, world!</title> -->
+    <style>
+        #pageCover {
+            background-color: red;
+            position: fixed;
+            z-index: 9999;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        html,
+        body {
+            background-color: black;
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Hello, world!</h1> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <div class="container" style="background-color: greenyellow;" hidden>
+        <span>空无一物</span>
+    </div>
+    <div class="container-fluid" style="background-color: grey;" hidden>
+        <span>000</span>
+    </div>
+    <div id="pageCover" hidden>
+        &nbsp;
+        <span>screen,protected</span>
+    </div>
+    <div class="container-fluid">
+        <hr style="border-color: hotpink;">
+        <div class="container-fluid" style="border-left: solid khaki 1px;border-right: dotted 1px springgreen;">
+            <!-- &nbsp; -->
+            <!-- 导航栏 -->
+            <nav class="navbar navabr-dark bg-dark" style="border-radius: .5rem;">
+                <a href="#" class="navbar-brand btn btn-dark btn-outline-default" id="otherContent" data-toggle="tooltip" data-placement="right" title="本网站其他内容">
+                    <!-- <span>application.</span> -->
+                    <!-- 此处使用svg图标，代替应用集 -->
+                    <svg t="1604392766072" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5190" width="30" height="30">
+                        <path
+                            d="M853.1968 590.9504c31.3344-72.9088-10.24-132.1984-44.3392-159.8464 18.0224-57.7536-23.2448-112.64-46.08-143.36a98.9184 98.9184 0 0 0-53.9648-36.0448l-63.0784-18.3296a148.7872 148.7872 0 0 0 8.0896-47.3088C648.4992 153.6 530.2272 145.408 514.4576 145.408s-134.144 8.4992-139.4688 40.3456a152.4736 152.4736 0 0 0 8.192 47.3088l-62.6688 18.2272a99.1232 99.1232 0 0 0-54.272 36.1472c-22.8352 30.72-64.2048 85.9136-46.08 143.36-33.9968 27.648-75.776 86.9376-44.4416 159.8464-17.3056 22.6304-55.1936 87.3472 2.2528 167.6288l17.7152 69.0176h56.4224a105.7792 105.7792 0 0 0 7.7824 16.6912l1.9456 3.072 3.072 2.048c4.7104 2.9696 52.0192 29.184 243.8144 29.184 194.56 0 251.6992-27.3408 254.0544-28.4672l4.096-1.9456 2.2528-3.8912a90.2144 90.2144 0 0 0 7.7824-16.6912h56.5248l17.7152-69.0176c57.2416-79.9744 19.2512-144.6912 2.048-167.3216z m-35.328-103.424a94.5152 94.5152 0 0 1 3.584 98.816l-1.1264 2.2528-96.9728 18.944a194.56 194.56 0 0 0-29.3888-31.4368 144.5888 144.5888 0 0 0 33.0752-112.64l52.6336-15.4624 2.1504 1.4336a140.288 140.288 0 0 1 36.0448 38.0928zM517.5296 724.992l1.1264-124.0064a822.4768 822.4768 0 0 0 140.5952-12.9024l3.584 2.4576c0.7168 0 75.4688 52.224 49.5616 114.0736v1.3312a983.04 983.04 0 0 1-194.8672 19.0464zM317.44 706.56l-0.8192-1.8432c-25.7024-61.44 46.592-112.0256 49.664-114.0736l3.584-2.4576a813.056 813.056 0 0 0 133.12 12.8L501.76 724.8896A870.4 870.4 0 0 1 317.44 706.56z m33.28-297.984a1136.64 1136.64 0 0 0 154.112 14.1312l-1.4336 162.816A811.9296 811.9296 0 0 1 374.8864 573.44l-6.2464-6.5536c-66.8672-65.1264-25.6-145.3056-18.1248-158.4128z m67.6864-165.2736l-1.2288-4.1984c-3.6864-11.776-7.2704-25.3952-9.5232-35.328a326.3488 326.3488 0 0 0 99.2256 17.1008v36.9664a314.88 314.88 0 0 1-88.6784-14.6432z m193.7408-4.1984l-1.3312 4.3008a315.4944 315.4944 0 0 1-88.576 14.336v-36.9664a327.68 327.68 0 0 0 99.328-17.1008c-2.3552 10.0352-6.0416 23.6544-9.6256 35.328z m66.3552 169.472c7.0656 12.5952 48.3328 93.7984-17.6128 158.4128l-6.7584 6.5536a801.1776 801.1776 0 0 1-135.168 12.1856l1.4336-162.9184a1110.8352 1110.8352 0 0 0 157.9008-14.336z m22.3232-127.3856a67.7888 67.7888 0 0 1 37.4784 24.7808c20.48 27.5456 58.9824 78.9504 38.2976 124.2112l-1.4336 3.1744-50.2784 14.7456a204.1856 204.1856 0 0 0-16.7936-49.2544c16.384-33.28 3.072-58.88-7.0656-68.3008l-21.0944 22.3232c1.3312 1.3312 12.3904 13.824-2.4576 37.7856l-1.7408 2.7648a1080.0128 1080.0128 0 0 1-155.136 14.0288l1.1264-134.2464a331.1616 331.1616 0 0 0 96.6656-16.0768z m-89.4976-90.2144a317.44 317.44 0 0 1-96.6656 14.7456 315.0848 315.0848 0 0 1-96.6656-14.848 383.6928 383.6928 0 0 1 96.6656-14.6432 378.88 378.88 0 0 1 96.4608 14.6432zM290.7136 305.8688a69.0176 69.0176 0 0 1 37.9904-24.9856l81.92-23.8592a330.3424 330.3424 0 0 0 95.4368 16.0768l-1.1264 134.2464a1110.2208 1110.2208 0 0 1-151.6544-14.0288l-1.7408-2.7648c-14.848-23.9616-3.6864-36.4544-2.3552-37.7856L327.68 330.4448c-10.24 9.4208-23.552 35.0208-7.0656 68.3008a200.2944 200.2944 0 0 0-16.7936 49.0496l-50.4832-14.848-0.8192-2.8672c-20.6848-45.2608 17.6128-96.6656 38.1952-124.2112z m-43.7248 143.36l2.4576-1.6384 52.4288 15.36a145.1008 145.1008 0 0 0 32.9728 112.64 198.2464 198.2464 0 0 0-29.184 31.3344l-97.28-19.0464-1.024-2.048c-41.2672-80.6912 36.352-134.3488 39.6288-136.4992zM204.8 604.16l0.9216-0.9216L296.96 621.2608a103.5264 103.5264 0 0 0-11.776 85.8112 189.7472 189.7472 0 0 0-24.576 37.1712h-55.1936l-1.024-1.4336c-58.1632-79.0528-2.3552-136.0896 0.4096-138.6496z m5.4272 155.2384h43.7248a111.0016 111.0016 0 0 0-6.8608 37.2736h-27.648z m103.3216-38.1952A873.1648 873.1648 0 0 0 501.76 740.2496l-0.7168 107.6224c-151.04-0.6144-204.8-18.2272-216.9856-23.2448-24.576-48.2304 28.5696-102.7072 29.0816-103.2192z m431.9232 102.4c-15.4624 5.4272-77.4144 23.1424-228.6592 23.7568l0.9216-107.52a1015.3984 1015.3984 0 0 0 197.9392-19.3536c1.1264 1.4336 53.3504 55.5008 29.3888 103.6288z m37.0688-27.2384a108.544 108.544 0 0 0-6.8608-37.2736H819.2l-9.5232 37.2736z m42.3936-54.0672l-1.024 1.4336h-55.0912A189.44 189.44 0 0 0 744.1408 706.56a103.1168 103.1168 0 0 0-11.6736-85.6064L823.7056 604.16l0.7168 0.7168c2.4576 1.8432 58.6752 58.2656 0.1024 137.9328z"
+                            fill="red" p-id="5191"></path>
+                    </svg>
+                </a>
+                <a href="#" class="navbar-brand btn btn-dark btn-outline-default" id="downBrowser" data-toggle="tooltip" data-placement="left" title="下载各版本的安装包">
+                    <!-- <span>download</span> -->
+                    <svg t="1604396897341" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6313" width="30" height="30">
+                        <path
+                            d="M469.312 570.24v-256h85.376v256h128L512 756.288 341.312 570.24h128zM1024 640.128C1024 782.912 919.872 896 787.648 896h-512C123.904 896 0 761.6 0 597.504 0 451.968 94.656 331.52 226.432 302.976 284.16 195.456 391.808 128 512 128c152.32 0 282.112 108.416 323.392 261.12C941.888 413.44 1024 519.04 1024 640.192zM764.8 434.816c-24.448-129.024-128.896-222.72-252.8-222.72-97.28 0-183.04 57.344-224.64 147.456l-9.28 20.224-20.928 2.944c-103.36 14.4-178.368 104.32-178.368 214.72 0 117.952 88.832 214.4 196.928 214.4h512c88.32 0 157.504-75.136 157.504-171.712 0-88.064-65.92-164.928-144.96-171.776l-29.504-2.56-5.888-30.976z"
+                            fill="blue" p-id="6314"></path>
+                    </svg>
+                </a>
+            </nav>
+            <div class="container">
+                <hr style="border: double 1px slategrey;">
+                <h2 style="text-align: center;color: white; margin-bottom: 1rem;">
+                    <!-- <span style="border-bottom: green 1px solid;">browser</span> -->
+                    <span style="border: 3px solid gray;border-radius: 1rem;padding: 2px;">浏览器</span>
+                </h2>
+                <ul id="tabsFunction" class="nav nav-tabs justify-content-end" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a href="#home" class="nav-link active" data-toggle='tab' role="tab" aria-controls="home" aria-selected="true">
+                            <!-- <span>sister</span> -->
+                            <strong>需求分析</strong>
+                            <!-- <span style="font-size: bold;font-style: bold;">需求分析</span> -->
+                            <span class="badge badge-primary">1</span>
+                        </a>
+                        <!-- <span>person</span> -->
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#setting" class="nav-link" data-toggle="tab" role="tab" aria-controls="setting" aria-selected="false">
+                            <span>概要设计</span>
+                            <span class="badge badge-primary">2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link">
+                            <span>详细设计</span>
+                            <span class="badge badge-primary">3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link">
+                            <span>编码实现</span>
+                            <span class="badge badge-primary">4</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link">
+                            <span>测试</span>
+                            <span class="badge badge-primary">5</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link">
+                            <span>交付及验收</span>
+                            <span class="badge badge-primary">6</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link">
+                            <span>维护</span>
+                            <span class="badge badge-primary">7</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="tabsFunctionContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="homeTab" style="padding-top: 1rem;">
+                        <!-- <span>..2.</span> -->
+                        <div class="container" style="border-left: steelblue solid 1px;border-bottom: solid 1px antiquewhite;border-bottom-left-radius: 1rem;">
+                            <!-- <span>&nbsp;00</span> -->
+                            <p>
+                                <span>市面上的软件，一层可分为系统、应用；系统的话，各类操作系统及其配套驱动、接口，应用层面大体分为普通业务用软件、游戏，</span>
+                                <span>这一层分辨依据可为实际效用和娱乐功能，</span>
+                                <span>综合考虑，应用看中适用场景，</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="settingTab">
+                        <span>..21.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border-color: aqua;">
+    </div>
+    <script>
+        $(function() {
+            console.log('page is loading,');
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
