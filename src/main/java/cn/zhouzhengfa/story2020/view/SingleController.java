@@ -17,6 +17,11 @@ import java.util.ArrayList;
 @Controller
 public class SingleController {
 
+    @RequestMapping("/other-content-2020")
+    public String other(){
+        return "other/otherContent";
+    }
+
     @RequestMapping("/")
     public String homePage2020oct14() {
         //太黑了，这屏幕；

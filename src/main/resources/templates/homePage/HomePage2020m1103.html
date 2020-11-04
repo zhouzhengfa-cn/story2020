@@ -26,6 +26,10 @@
             background-color: black;
             color: greenyellow;
         }
+        
+        p {
+            text-indent: 2rem;
+        }
     </style>
 </head>
 
@@ -52,7 +56,7 @@
             <!-- &nbsp; -->
             <!-- 导航栏 -->
             <nav class="navbar navabr-dark bg-dark" style="border-radius: .5rem;">
-                <a href="#" class="navbar-brand btn btn-dark btn-outline-default" id="otherContent" data-toggle="tooltip" data-placement="right" title="本网站其他内容">
+                <a href="/other-content-2020" class="navbar-brand btn btn-dark btn-outline-default" id="otherContent" data-toggle="tooltip" data-placement="right" title="本网站其他内容">
                     <!-- <span>application.</span> -->
                     <!-- 此处使用svg图标，代替应用集 -->
                     <svg t="1604392766072" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5190" width="30" height="30">
@@ -93,7 +97,7 @@
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a href="#" class="nav-link">
+                        <a href="#detailedDesign" class="nav-link" data-toggle="tab" role="tab" aria-controls="detailedDesign" aria-selected="false">
                             <span>详细设计</span>
                             <span class="badge badge-primary">3</span>
                         </a>
@@ -124,6 +128,7 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="tabsFunctionContent">
+                    <!-- 内容项：需求分析； -->
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="homeTab" style="padding-top: 1rem;">
                         <!-- <span>..2.</span> -->
                         <div class="container" style="border-left: steelblue solid 1px;border-bottom: solid 1px antiquewhite;border-bottom-left-radius: 1rem;">
@@ -131,12 +136,29 @@
                             <p>
                                 <span>市面上的软件，一层可分为系统、应用；系统的话，各类操作系统及其配套驱动、接口，应用层面大体分为普通业务用软件、游戏，</span>
                                 <span>这一层分辨依据可为实际效用和娱乐功能，</span>
-                                <span>综合考虑，应用看中适用场景，</span>
+                                <span>综合考虑，应用看中适用场景，而游戏呢，PC端的3D游戏，最近在wegame上看到一个网游宣传视频，</span>
+                                <i>重生边缘，</i><span>画质还可以了，玩法的话，大多以刺激性为主料，我是做不到了，不管怎么努力都是不可能的事，</span>
+                            </p>
+                            <p style="color: blanchedalmond;">
+                                <span>游戏方面，好的游戏画质，真实度，市面上的实力资金雄厚的工作室，公司有的是，玩法上，再有什么创新发生在自己身上也不太可能，</span>
+                                <samp>详情可参考steam上的游戏，好东西太多了，百花齐放，</samp>
+                                <i>对于个人来说，做游戏，以巧力取胜，才是至关重要的，拼画质，细腻，这些都是不明智的，而玩法发展到今时今日，基本都被开发出来了。</i>
+                                <span>将游戏玩法与实际科学概念联系起来，小而大就是说的这个，东西下，意义大，才是个人努力的出路。</span>
+                                <b>而这些要求在表现形式上并不需要繁重的物理设计，这些就需要一个统一的API，一个线条的世界。</b>
+                            </p>
+                            <p style="color: aqua;">
+                                <span>目前信息载体分为，PC、移动，而小的东西用PC来呈现确实大材小用，移动端，android离我最近，原生应用体量并不大，</span>
+                                <span>倒是unity好做，基量过大，也不适合。自己做一套API套路也是可用的，况且对一个啥也不懂的人来说有大功效。</span>
                             </p>
                         </div>
                     </div>
+                    <!-- 内容项：概要分析 -->
                     <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="settingTab">
                         <span>..21.</span>
+                    </div>
+                    <!-- 内容项：详细设计 -->
+                    <div class="tab-pane fade" id="detailedDesign" role="tabpanel" aria-labelledby="detailedDesignTab">
+                        <span>space</span>
                     </div>
                 </div>
             </div>
