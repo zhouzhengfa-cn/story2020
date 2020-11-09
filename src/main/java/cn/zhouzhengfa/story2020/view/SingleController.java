@@ -17,6 +17,14 @@ import java.util.ArrayList;
 @Controller
 public class SingleController {
 
+    /**
+     * @return
+     */
+    @RequestMapping("/other")
+    public String otherContent(){
+        return "other/otherContent01";
+    }
+
     @RequestMapping("/other-content-2020")
     public String other(){
         return "other/otherContent";
