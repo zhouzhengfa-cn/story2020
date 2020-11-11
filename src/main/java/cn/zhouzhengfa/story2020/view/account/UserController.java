@@ -16,6 +16,14 @@ import javax.servlet.http.HttpSession;
  */
 @Controller
 public class UserController {
+
+
+
+    @RequestMapping("/register")
+    public String userRegister(@RequestParam(value = "email",defaultValue = "hsaj") String email,@RequestParam(defaultValue = "123") String password ){
+        return "account-operation/register-doing-first";
+    }
+
     /**
      * 首页account-btn点击后，发送请求给服务器，服务器通过查询session中登陆状态，来判断如何跳转，
      * 1.personal center
